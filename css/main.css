@@ -876,6 +876,24 @@ textarea {
   margin-bottom: 0px;
 }
 
+@media screen and (min-width: 768px) {
+  .section-works__block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: -15px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .section-works__li {
+    width: calc((100% - 2 * 30px) / 2);
+    margin: 15px;
+  }
+}
+
 .section-works__background-context {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -923,24 +941,6 @@ textarea {
   letter-spacing: 0.03em;
   margin-top: 0px;
   margin-bottom: 0px;
-}
-
-@media screen and (min-width: 768px) {
-  .section-works__block {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    width: 768px;
-  }
-  .section-works__li {
-    width: 354px;
-  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -1178,16 +1178,35 @@ textarea {
   margin-bottom: 0px;
 }
 
+@media screen and (min-width: 768px) {
+  .section-members__distance {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: -15px;
+  }
+}
+
 .section-members__li {
   background-color: #FFFFFF;
   border-radius: 0px 0px 4px 4px;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-  margin-bottom: 30px;
 }
 
-.section-members__li:last-child {
-  margin-bottom: 0px;
+@media screen and (max-width: 767px) {
+  .section-members__li:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .section-members__li {
+    width: calc((100% - 2 * 30px) / 2);
+    margin: 15px;
+  }
 }
 
 .section-members__title-two {
@@ -1345,14 +1364,46 @@ textarea {
   padding: 0;
 }
 
+@media screen and (min-width: 480px) {
+  .clients {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: -15px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .clients {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: -15px;
+  }
+}
+
 .clients-image {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.clients-image + .clients-image {
-  margin-left: 30px;
+@media screen and (min-width: 480px) {
+  .clients-image {
+    width: calc((100% - 2 * 30px) / 2);
+    margin: 15px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .clients-image {
+    width: calc((100% - 3 * 30px) / 3);
+    margin: 15px;
+  }
 }
 
 .clients-logo {

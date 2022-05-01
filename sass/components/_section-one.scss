@@ -11,6 +11,18 @@
   padding-bottom: 60px;
   margin: 0px;
   margin-bottom: 0px;
+
+  @media screen and (min-width:768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+}
+.section-works__li{
+  @media screen and (min-width:768px) {
+    width: calc((100% - 2 * 30px) / 2);
+    margin: 15px;
+  }
 }
 
 .section-works__background-context {
@@ -52,18 +64,6 @@
 
   margin-top: 0px;
   margin-bottom: 0px;
-}
-
-@media screen and (min-width:768px){
-  .section-works__block{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 768px;
-  }
-  .section-works__li{
-    width: 354px;
-  }
 }
 
 
