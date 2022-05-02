@@ -13,6 +13,11 @@
   color: $thirdly-text-color;
   margin-top: 60px;
   margin-bottom: 20px;
+
+  @media screen and (min-width:1200px){
+    display: flex;
+    justify-content: flex-start;
+  }
 }
 
 // .form{
@@ -40,6 +45,16 @@
   color: rgba(255, 255, 255, 0.6);
 
   outline: none;
+
+  @media screen and (min-width:1200px){
+    display: flex;
+    margin-right: 12px;
+  }
+  @media screen and (min-width:768px){
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+  }
 }
 
 .svg-footer{
