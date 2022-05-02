@@ -106,13 +106,13 @@
 }
 
 .button-follow{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   position: relative;
   min-width: 200px;
   height: 50px;
-
-  margin-left: 12px;
   
-
   background-color: $main-color;
   border: transparent;
   border-radius: 4px;
