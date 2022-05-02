@@ -156,12 +156,6 @@ textarea {
   pointer-events: none;
 }
 
-.mobile-menu.is-open {
-  opacity: 1;
-  visibility: visible;
-  pointer-events: auto;
-}
-
 .header-menu__close-button {
   position: absolute;
   background-color: transparent;
@@ -663,20 +657,20 @@ textarea {
   outline: none;
 }
 
+@media screen and (min-width: 768px) {
+  .footer-border {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .footer-border {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     margin-right: 12px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .footer-border {
-    display: block;
-    margin-right: auto;
-    margin-left: auto;
   }
 }
 
@@ -1469,14 +1463,6 @@ textarea {
 .footer-links {
   margin-left: auto;
   margin-right: auto;
-}
-
-@media screen and (min-width: 768px) {
-  .footer-links {
-    position: absolute;
-    top: 65px;
-    right: 89px;
-  }
 }
 
 @media screen and (min-width: 1200px) {
