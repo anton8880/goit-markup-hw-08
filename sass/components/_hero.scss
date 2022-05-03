@@ -4,13 +4,21 @@
  margin-right: auto;
  max-width: 1600px;
  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
- url(../images/Img-2.svg);
+ url(../images/bgc-image.svg);
  padding-top: 200px;
  padding-bottom: 200px;
  text-align: center;
  background-position: center;
  background-repeat: no-repeat;
  background-size: cover;
+}
+
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero {
+    background-image: url(./images/bgc-image@2x.jpg);
+  }
 }
 
 .hero-title {
@@ -34,7 +42,7 @@
  margin-right: auto;
  max-width: 1600px;
  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
- url(../images/Img-2.svg);
+ url(../images/bgc-image.svg);
  padding-top: 200px;
  padding-bottom: 200px;
  text-align: center;

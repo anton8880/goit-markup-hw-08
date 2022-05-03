@@ -28,9 +28,14 @@
                 </ul>
             </nav>
 
-            <button type="button" class="mobile-menu-btn">
+            <button 
+            type="button" 
+            class="mobile-menu-btn"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+            data-menu-button>
                 <svg class="mobile-menu-btn__icon" width="40" height="40">
-                    <use href="./images/symbol-defs.svg#burger-icon-menu" data-modal-open></use>
+                    <use href="./images/symbol-defs.svg#burger-icon-menu"></use>
                 </svg>
                 </button>
 
@@ -49,6 +54,53 @@
                     +38 096 111 11 11</a></li>
             </ul>
         </div>
+
+<div class="mobile-menu is-open" id="mobile-menu" data-menu>
+            <div class="container mobile-menu-container">
+            <button class="header-menu__close-button" data-menu-close>
+                <svg class="mobile-menu__close-svg" width="40" height="40">
+                    <use href="./images/symbol-defs.svg#icon-close"></use>
+                </svg>
+            </button>
+            <ul class="mobile-menu-list">
+                <li>
+                    <a href="./index.html" class="mobile-menu-link">Студия</a>
+                </li>
+                <li>
+                    <a href="./portfolio.html" class="mobile-menu-link">Портфолио</a>
+                </li>
+                <li>
+                    <a href="" class="mobile-menu-link">Контакты</a>
+                </li>
+            </ul>
+
+            <ul class="mobile-menu-contact">
+                <li>
+                    <a href="+380961111111" class="mobile-menu-link__tel">+38 096 111 11 11</a>
+                </li>
+                <li>
+                    <a href="info@devstudio.com" class="mobile-menu-link__mail">info@devstudio.com</a>
+                </li>
+            </ul>
+
+            <ul class="mobile-menu__social-link">
+                <li class="mobile-menu-item">
+                    <a href="" class="mobile-menu__network">Instagram</a>
+                </li>
+                <li class="mobile-menu-item">
+                    <a href="" class="mobile-menu__network">Twitter</a>
+                </li>
+                <li class="mobile-menu-item">
+                    <a href="" class="mobile-menu__network">Facebook</a>
+                </li>
+                <li class="mobile-menu-item">
+                    <a href="" class="mobile-menu__network">LinkedIn</a>
+                </li>
+            </ul>
+        </div>
+        </div>
+
+
 </header>
     <main>
         <section class="portfolio">
@@ -65,7 +117,22 @@
                     <li class="flex-element">
                         <a href="" class="cards-shadow">
                             <div class="discription-position">
-                                <img src="./images-2/img-1.jpg" alt="example" width="370" class="img">
+                    <picture>
+                        <source 
+                        srcset="./images-2/desktop.jpg 1x, ./images-2/desktop@2x.jpg 2x"
+                        media="(min-width: 1200px)">
+
+                        <source 
+                        srcset="./images-2/tablet.jpg 1x, ./images-2/tablet@2x.jpg 2x"
+                        media="(min-width: 768px)"
+                        class="tablet-img">
+
+                        <source 
+                        srcset="./images-2/mobile.jpg 1x, ./images-2/mobile@2x.jpg 2x"
+                        media="(max-width: 767px)">
+
+                        <img src="./images-2/desktop.jpg" alt="example" class="img">
+                    </picture>
                             <div class="discription">
                                 <p class="cards-discription">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
                             </div>
@@ -80,7 +147,22 @@
                     <li class="flex-element">
                         <a href=""class="cards-shadow">
                             <div class="discription-position">
-                            <img src="./images-2/img-2.jpg" alt="example" width="370" class="img">
+                            <picture>
+                        <source 
+                        srcset="./images-2/desktop2.jpg 1x, ./images-2/desktop2@2x.jpg 2x"
+                        media="(min-width: 1200px)">
+
+                        <source 
+                        srcset="./images-2/tablet2.jpg 1x, ./images-2/tablet2@2x.jpg 2x"
+                        media="(min-width: 768px)"
+                        class="tablet-img">
+
+                        <source 
+                        srcset="./images-2/mobile2.jpg 1x, ./images-2/mobile2@2x.jpg 2x"
+                        media="(max-width: 767px)">
+
+                        <img src="./images-2/desktop2.jpg" alt="example" class="img">
+                    </picture>
                             <div class="discription">
                                 <p class="cards-discription">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
                                 </p>
@@ -96,7 +178,22 @@
                     <li class="flex-element">
                         <a href=""class="cards-shadow">
                             <div class="discription-position">
-                            <img src="./images-2/img-3.jpg" alt="example" width="370" class="img">
+                           <picture>
+                        <source 
+                        srcset="./images-2/desktop3.jpg 1x, ./images-2/desktop3@2x.jpg 2x"
+                        media="(min-width: 1200px)">
+
+                        <source 
+                        srcset="./images-2/tablet3.jpg 1x, ./images-2/tablet3@2x.jpg 2x"
+                        media="(min-width: 768px)"
+                        class="tablet-img">
+
+                        <source 
+                        srcset="./images-2/mobile3.jpg 1x, ./images-2/mobile3@2x.jpg 2x"
+                        media="(max-width: 767px)">
+
+                        <img src="./images-2/desktop3.jpg" alt="example" class="img">
+                    </picture>
                             <div class="discription">
                                 <p class="cards-discription">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
                                 </p>
@@ -112,7 +209,22 @@
                     <li class="flex-element">
                         <a href=""class="cards-shadow">
                             <div class="discription-position">
-                            <img src="./images-2/img-4.jpg" alt="example" width="370" class="img">
+                            <picture>
+                        <source 
+                        srcset="./images-2/desktop4.jpg 1x, ./images-2/desktop4@2x.jpg 2x"
+                        media="(min-width: 1200px)">
+
+                        <source 
+                        srcset="./images-2/tablet4.jpg 1x, ./images-2/tablet4@2x.jpg 2x"
+                        media="(min-width: 768px)"
+                        class="tablet-img">
+
+                        <source 
+                        srcset="./images-2/mobile4.jpg 1x, ./images-2/mobile4@2x.jpg 2x"
+                        media="(max-width: 767px)">
+
+                       <img src="./images-2/desktop4.jpg" alt="example" class="img">
+                    </picture>
                             <div class="discription">
                                 <p class="cards-discription">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
                                 </p>
@@ -128,7 +240,22 @@
                     <li class="flex-element">
                         <a href=""class="cards-shadow">
                             <div class="discription-position">
-                            <img src="./images-2/img-5.jpg" alt="example" width="370" class="img">
+                            <picture>
+                        <source 
+                        srcset="./images-2/desktop5.jpg 1x, ./images-2/desktop5@2x.jpg 2x"
+                        media="(min-width: 1200px)">
+
+                        <source 
+                        srcset="./images-2/tablet5.jpg 1x, ./images-2/tablet5@2x.jpg 2x"
+                        media="(min-width: 768px)"
+                        class="tablet-img">
+
+                        <source 
+                        srcset="./images-2/mobile5.jpg 1x, ./images-2/mobile5@2x.jpg 2x"
+                        media="(max-width: 767px)">
+
+                        <img src="./images-2/desktop5.jpg" alt="example" class="img">
+                    </picture>
                             <div class="discription">
                                 <p class="cards-discription">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
                                 </p>
@@ -144,7 +271,22 @@
                     <li class="flex-element">
                         <a href=""class="cards-shadow">
                             <div class="discription-position">
-                            <img src="./images-2/img-6.jpg" alt="example" width="370" class="img">
+                            <picture>
+                        <source 
+                        srcset="./images-2/desktop6.jpg 1x, ./images-2/desktop6@2x.jpg 2x"
+                        media="(min-width: 1200px)">
+
+                        <source 
+                        srcset="./images-2/tablet6.jpg 1x, ./images-2/tablet6@2x.jpg 2x"
+                        media="(min-width: 768px)"
+                        class="tablet-img">
+
+                        <source 
+                        srcset="./images-2/mobile6.jpg 1x, ./images-2/mobile6@2x.jpg 2x"
+                        media="(max-width: 767px)">
+
+                        <img src="./images-2/desktop6.jpg" alt="example" class="img">
+                    </picture>
                             <div class="discription">
                                 <p class="cards-discription">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
                                 </p>
@@ -160,7 +302,22 @@
                     <li class="flex-element">
                         <a href=""class="cards-shadow">
                             <div class="discription-position">
-                            <img src="./images-2/img-7.jpg" alt="example" width="370" class="img">
+                           <picture>
+                        <source 
+                        srcset="./images-2/desktop7.jpg 1x, ./images-2/desktop7@2x.jpg 2x"
+                        media="(min-width: 1200px)">
+
+                        <source 
+                        srcset="./images-2/tablet7.jpg 1x, ./images-2/tablet7@2x.jpg 2x"
+                        media="(min-width: 768px)"
+                        class="tablet-img">
+
+                        <source 
+                        srcset="./images-2/mobile7.jpg 1x, ./images-2/mobile7@2x.jpg 2x"
+                        media="(max-width: 767px)">
+
+                        <img src="./images-2/desktop7.jpg" alt="example" class="img">
+                    </picture>
                             <div class="discription">
                                 <p class="cards-discription">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
                                 </p>
@@ -176,7 +333,22 @@
                     <li class="flex-element">
                         <a href=""class="cards-shadow">
                             <div class="discription-position">
-                            <img src="./images-2/img-8.jpg" alt="example" width="370" class="img">
+                            <picture>
+                        <source 
+                        srcset="./images-2/desktop8.jpg 1x, ./images-2/desktop8@2x.jpg 2x"
+                        media="(min-width: 1200px)">
+
+                        <source 
+                        srcset="./images-2/tablet8.jpg 1x, ./images-2/tablet8@2x.jpg 2x"
+                        media="(min-width: 768px)"
+                        class="tablet-img">
+
+                        <source 
+                        srcset="./images-2/mobile8.jpg 1x, ./images-2/mobile8@2x.jpg 2x"
+                        media="(max-width: 767px)">
+
+                        <img src="./images-2/desktop8.jpg" alt="example" class="img">
+                    </picture>
                             <div class="discription">
                                 <p class="cards-discription">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
                                 </p>
@@ -192,7 +364,22 @@
                     <li class="flex-element">
                         <a href=""class="cards-shadow">
                             <div class="discription-position">
-                            <img src="./images-2/img-9.jpg" alt="example" width="370" class="img">
+                           <picture>
+                        <source 
+                        srcset="./images-2/desktop9.jpg 1x, ./images-2/desktop9@2x.jpg 2x"
+                        media="(min-width: 1200px)">
+
+                        <source 
+                        srcset="./images-2/tablet9.jpg 1x, ./images-2/tablet9@2x.jpg 2x"
+                        media="(min-width: 768px)"
+                        class="tablet-img">
+
+                        <source 
+                        srcset="./images-2/mobile9.jpg 1x, ./images-2/mobile9@2x.jpg 2x"
+                        media="(max-width: 767px)">
+
+                        <img src="./images-2/desktop9.jpg" alt="example" class="img">
+                    </picture>
                             <div class="discription">
                                 <p class="cards-discription">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
                                 </p>

@@ -55,11 +55,11 @@ letter-spacing: 0.03em;
   pointer-events: none;
 }
 
-// .mobile-menu.is-open{
-//   opacity: 1;
-//   visibility: visible;
-//   pointer-events: auto;
-// }
+.mobile-menu.is-open{
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
 
 
 .header-menu__close-button{

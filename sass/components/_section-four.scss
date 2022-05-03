@@ -26,6 +26,11 @@
   margin: 0;
   padding: 0;
 
+  @media screen and (max-width:479px){
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
   @media screen and (min-width:480px) {
     display: flex;
     flex-wrap: wrap;
@@ -42,6 +47,10 @@
 .clients-image {
   display: flex;
 
+  @media screen and (max-width:479px){
+     width: calc((100% - 2 * 30px) / 2);
+    margin: 15px;
+  }
   @media screen and (min-width:480px) {
     width: calc((100% - 2 * 30px) / 2);
     margin: 15px;
