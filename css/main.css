@@ -156,6 +156,12 @@ textarea {
   pointer-events: none;
 }
 
+.mobile-menu.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
 .header-menu__close-button {
   position: absolute;
   background-color: transparent;
@@ -220,6 +226,11 @@ textarea {
   color: #757575;
 }
 
+.right-border {
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+  margin-left: 10px;
+}
+
 .mobile-menu__network {
   font-weight: 500;
   font-size: 18px;
@@ -238,7 +249,7 @@ textarea {
 }
 
 .mobile-menu-item + .mobile-menu-item {
-  margin-left: 20px;
+  margin-left: 10px;
 }
 
 @media screen and (min-width: 768px) {
@@ -1167,8 +1178,8 @@ textarea {
   margin-left: auto;
   margin-right: auto;
   max-width: 1600px;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/Img-bgc.jpg);
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Img-bgc.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/header-mobile.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/header-mobile.jpg);
   padding-top: 200px;
   padding-bottom: 200px;
   text-align: center;
@@ -1177,9 +1188,17 @@ textarea {
   background-size: cover;
 }
 
-@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+@media screen and (min-width: 768px) {
   .hero {
-    background-image: url(./images/Img-bgc@2x.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/header-tablet.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/header-tablet.jpg);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/header-desktop.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/header-desktop.jpg);
   }
 }
 
@@ -1201,8 +1220,6 @@ textarea {
     margin-left: auto;
     margin-right: auto;
     max-width: 1600px;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/bgc-image.svg);
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bgc-image.svg);
     padding-top: 200px;
     padding-bottom: 200px;
     text-align: center;
