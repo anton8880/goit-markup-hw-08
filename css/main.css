@@ -156,12 +156,6 @@ textarea {
   pointer-events: none;
 }
 
-.mobile-menu.is-open {
-  opacity: 1;
-  visibility: visible;
-  pointer-events: auto;
-}
-
 .header-menu__close-button {
   position: absolute;
   background-color: transparent;
@@ -506,6 +500,17 @@ textarea {
   background-color: #188ce8;
 }
 
+.button-follow {
+  display: block;
+  margin-top: 20px;
+}
+
+@media screen and (min-width: 1200px) {
+  .button-follow {
+    margin: 0px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .button {
     display: inline-block;
@@ -583,7 +588,6 @@ textarea {
   position: relative;
   min-width: 200px;
   height: 50px;
-  margin-top: 20px;
   background-color: #2196F3;
   border: transparent;
   border-radius: 4px;
@@ -1163,8 +1167,8 @@ textarea {
   margin-left: auto;
   margin-right: auto;
   max-width: 1600px;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/bgc-image.svg);
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bgc-image.svg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/Img-bgc.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Img-bgc.jpg);
   padding-top: 200px;
   padding-bottom: 200px;
   text-align: center;
@@ -1175,7 +1179,7 @@ textarea {
 
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
-    background-image: url(./images/bgc-image@2x.jpg);
+    background-image: url(./images/Img-bgc@2x.jpg);
   }
 }
 
@@ -1183,7 +1187,7 @@ textarea {
   color: #FFFFFF;
   font-weight: 900;
   font-size: 26px;
-  line-height: 0.61;
+  line-height: 42px;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -1529,6 +1533,16 @@ textarea {
 .footer-links {
   margin-left: auto;
   margin-right: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-links {
+    width: 206px;
+    display: block;
+    margin: 0px;
+    margin-left: 473px;
+    margin-top: -102px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -2172,11 +2186,27 @@ textarea {
 }
 
 .portfolio-padding {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding: 0px;
+  margin-top: 0px;
+  margin-bottom: 40px;
 }
 
 @media screen and (min-width: 768px) {
   .portfolio-padding {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     margin: 0px;
     margin-bottom: 30px;
   }
@@ -2196,8 +2226,24 @@ textarea {
   }
 }
 
-.item-two + .item-two {
-  margin-left: 8px;
+.item-two:not(:nth-last-child(-n + 2)) {
+  margin-bottom: 15px;
+}
+
+.item-two:not(:last-child) {
+  margin-right: 8px;
+}
+
+@media screen and (min-width: 768px) {
+  .item-two + .item-two {
+    margin-left: 8px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .item-two + .item-two {
+    margin-left: 8px;
+  }
 }
 
 .portfolio-flex {

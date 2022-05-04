@@ -24,6 +24,14 @@
     background-color: #188ce8;
   }
 }
+.button-follow{
+  display: block;
+  margin-top: 20px;
+
+  @media screen and (min-width:1200px){
+    margin: 0px;
+  }
+}
 
 @media screen and (min-width:1200px) {
   .button {
@@ -112,7 +120,6 @@
   position: relative;
   min-width: 200px;
   height: 50px;
-  margin-top: 20px;
   
   background-color: $main-color;
   border: transparent;
@@ -123,6 +130,7 @@
   &:focus{
     background-color: #188ce8;
   }
+
 }
 
 .btn{

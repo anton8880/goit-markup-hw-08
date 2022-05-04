@@ -4,15 +4,21 @@
 }
 
 .portfolio-padding {
-  display: block;  
+  display: flex;  
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  padding: 0px;
+  margin-top: 0px;
+  margin-bottom: 40px;
   
 
   @media screen and (min-width:768px){
+    display: flex;
+    justify-content: center;
     margin: 0px;
     margin-bottom: 30px;
   }
   @media screen and (min-width:1200px){
-    
   display: flex;
   padding-left: 0px;
   justify-content: center;
@@ -21,9 +27,24 @@
 }
 }
 
+.item-two:not(:nth-last-child(-n + 2)) {
+      margin-bottom: 15px;
+    }
+.item-two:not(:last-child) {
+      margin-right: 8px;
+    }
+
+@media screen and (min-width:768px){
 .item-two + .item-two {
   margin-left: 8px;
 }
+}
+@media screen and (min-width:1200px){
+.item-two + .item-two {
+  margin-left: 8px;
+}
+}
+
 .portfolio-flex {
   display: flex;
   flex-wrap: wrap;

@@ -174,20 +174,35 @@
             <h2 class="section-example__title">Чем мы занимаемся</h2>
             <ul class="section-example__images">
                 <li class="item section-example__images">
-                    <img src="./images/img-one.jpg" alt="example" width="370">
+                    <picture>
+                        <source 
+                        srcset="./images/img-one.jpg 1x, ./images/img-one@2x.jpg 2x"
+                        media="(min-width: 1200px)">
+                        <img src="./images/img-one.jpg" alt="example" width="370">
+                    </picture>
                  <div class="section-example__position">
                      <p class="section-example__position-title">Десктопные приложения</p>
                  </div>
                 </li>
                 <li class="item section-example__images">
-                    <img src="./images/img-two.jpg" alt="example" width="370">
+                    <picture>
+                        <source 
+                        srcset="./images/img-two.jpg 1x, ./images/img-two@2x.jpg 2x"
+                        media="(min-width: 1200px)">
+                        <img src="./images/img-two.jpg" alt="example" width="370">
+                    </picture>
                     <div class="section-example__position">
                      <p class="section-example__position-title">Мобильные приложения</p>
                  </div>
                 </li>
 
                 <li class="item section-example__images">
-                    <img src="./images/img-three.jpg" alt="example" width="370">
+                    <picture>
+                        <source 
+                        srcset="./images/img-three.jpg 1x, ./images/img-three@2x.jpg 2x"
+                        media="(min-width: 1200px)">
+                        <img src="./images/img-three.jpg" alt="example" width="370">
+                    </picture>
                     <div class="section-example__position">
                      <p class="section-example__position-title">Дизайнерские решения</p>
                  </div>
@@ -516,8 +531,6 @@
                         </li>
                     </ul>
                  </div>
-                
-         
                  
                  <div class="form-container">
                  <p class="footer-follow">Подпишитесь на рассылку</p> 
