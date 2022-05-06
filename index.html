@@ -24,7 +24,7 @@
             <nav class="main-nav">
                 <a href="" class="logo"><span class="logo-web">Web</span><span class="logo-studio">Studio</span></a>
                 <ul class="site-nav list">
-                    <li class="item tablet"><a href="./index.html" class="link current item-current">Студия</a></li>
+                    <li class="item tablet"><a href="./index.html" class="link current item-current current-tablet">Студия</a></li>
                     <li class="item tablet"><a href="./portfolio.html" class="link">Портфолио</a></li>
                     <li class="item tablet"><a href="" class="link">Контакты</a></li>
                 </ul>
@@ -65,7 +65,7 @@
             </button>
             <ul class="mobile-menu-list">
                 <li>
-                    <a href="./index.html" class="mobile-menu-link">Студия</a>
+                    <a href="./index.html" class="mobile-menu-link current">Студия</a>
                 </li>
                 <li>
                     <a href="./portfolio.html" class="mobile-menu-link">Портфолио</a>
@@ -161,7 +161,7 @@
                             </svg>
                         </div>
                         <h3 class="section-works__title">Современные технологии</h3>
-                        <p class="section-works__p">
+                        <p class="section-works__p mb">
                             Значимость этих проблем настолько очевидна, что реализация плановых заданий.
                         </p>
                     </li>
@@ -229,11 +229,12 @@
                         <source 
                         srcset="./images/img-tablet.jpg 1x, ./images/img-tablet@2x.jpg 2x"
                         media="(min-width: 768px)"
-                        class="tablet-img">
+                        width="100%">
 
                         <source 
                         srcset="./images/img-mobile-1.jpg 1x, ./images/img-mobile-1@2x.jpg 2x"
-                        media="(max-width: 767px)">
+                        media="(max-width: 767px)"
+                        width="100%">
 
                         <img src="./images/img-desktop.jpg" alt="example" class="section-members__images">
                     </picture>
@@ -281,11 +282,13 @@
 
                         <source 
                         srcset="./images/img-tablet2.jpg 1x, ./images/img-tablet2@2x.jpg 2x"
-                        media="(min-width: 768px)">
+                        media="(min-width: 768px)"
+                        width="100%">
 
                         <source 
                         srcset="./images/img-desktop2.jpg 1x, ./images/img-mobile2@2x.jpg 2x"
-                        media="(max-width: 767px)">
+                        media="(max-width: 767px)"
+                        width="100%">
 
                         <img src="./images/img-mobile2.jpg" alt="example" class="section-members__images">
                     </picture>
@@ -334,11 +337,13 @@
 
                         <source 
                         srcset="./images/img-tablet3.jpg 1x, ./images/img-tablet3@2x.jpg 2x"
-                        media="(min-width: 768px)">
+                        media="(min-width: 768px)"
+                        width="100%">
 
                         <source 
                         srcset="./images/img-desktop3.jpg 1x, ./images/img-mobile3@2x.jpg 2x"
-                        media="(max-width: 767px)">
+                        media="(max-width: 767px)"
+                        width="100%">
 
                         <img src="./images/img-mobile3.jpg" alt="example" class="section-members__images">
                     </picture>
@@ -385,11 +390,13 @@
 
                         <source 
                         srcset="./images/img-tablet4.jpg 1x, ./images/img-tablet4@2x.jpg 2x"
-                        media="(min-width: 768px)">
+                        media="(min-width: 768px)"
+                        width="100%">
 
                         <source 
                         srcset="./images/img-mobile4.jpg 1x, ./images/img-mobile4@2x.jpg 2x"
-                        media="(max-width: 767px)">
+                        media="(max-width: 767px)"
+                        width="100%">
 
                         <img src="./images/img-desktop4.jpg" alt="example" class="section-members__images">
                     </picture>
@@ -553,7 +560,7 @@
     
     <div class="backdrop is-hidden" data-modal>
                     <div class="modal">
-                        <form class="modal-form">
+                    <form class="modal-form">
                     <h2 class="modal-hero">Оставьте свои данные, мы вам перезвоним</h2>
 
                     <label class="form-field">

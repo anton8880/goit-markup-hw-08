@@ -3,6 +3,17 @@
   padding-bottom: 94px;
 }
 
+@media screen and (min-width:768px){
+  .div-portfolio.pd{
+  padding-bottom: 56px;
+}
+}
+@media screen and (min-width:1200px){
+  .div-portfolio.pd{
+  padding-bottom: 20px;
+}
+}
+
 .portfolio-padding {
   display: flex;  
   flex-wrap: wrap;
@@ -53,6 +64,9 @@
   margin-bottom: -30px;
   margin-right: -30px;
 
+  @media screen and (max-width:479px){
+  width: 100%;
+  }
   @media screen and (min-width:768px) {
     display: flex;
     flex-wrap: wrap;
@@ -61,7 +75,6 @@
 }
 
 .flex-element {
-  //  width: 450px;
    margin-bottom: 30px;
 
     @media screen and (min-width:768px) {
@@ -93,6 +106,7 @@
   transform: translateY(0);
 }
 
+
 @media screen and (min-width:1200px){
     width: 370px;
   }
@@ -101,7 +115,7 @@
 .discription-position {
   position: relative;
   overflow: hidden;
-}
+} 
 
 .img {
   display: block;
@@ -140,9 +154,6 @@
   border-bottom: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
-}
-.pd{
-  padding-bottom: 56px;
 }
 
 .head-two {

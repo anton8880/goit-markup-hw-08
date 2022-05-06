@@ -40,7 +40,6 @@ font-size: 24px;
 line-height: 0.85;
 letter-spacing: 0.03em;
 }
-
 .mobile-menu{
   position: fixed;
   top: 0;
@@ -54,7 +53,6 @@ letter-spacing: 0.03em;
   visibility: none;
   pointer-events: none;
   z-index: 100;
-  
   
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -83,7 +81,7 @@ letter-spacing: 0.03em;
 }
 
 .mobile-menu-container{
-  position: relative;
+  padding:48px 40px;
 }
 
 .mobile-menu-link{
@@ -101,26 +99,30 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 &:focus{
   color: $main-color;
 }
+&.current{
+  color: $main-color;
+}
 }
 
 .mobile-menu-list{
   width: 219px;
-  padding-top: 48px;
-  margin: 0;
+  padding: 0px;
+  margin: 0px;
 }
 
 .mobile-menu-contact{
-  margin: 0;
+  margin: 0px;
+  padding: 0px;
 }
 
 .mobile-menu-link__tel{
 display: block;
 font-weight: 500;
 font-size: 34px;
-line-height: 0.85px;
+line-height: 0.85;
 letter-spacing: 0.02em;
 
-color: #2196F3;
+color: $main-color;
 
 margin-bottom: 32px;
 margin-top: 302px;
@@ -132,7 +134,7 @@ font-size: 24px;
 line-height: 0.85;
 letter-spacing: 0.02em;
 
-color: #757575;
+color: $secondary-text-color;
 }
 .right-border{
   border-right: 1px solid rgba(33, 33, 33, 0.2);
@@ -145,14 +147,14 @@ font-size: 18px;
 line-height: 0.81;
 letter-spacing: 0.02em;
 
-color: #2196F3;
+color: $main-color;
 }
 
 .mobile-menu__social-link{
   display: flex;
   margin-top: 64px;
   margin-bottom: 0px;
-  padding-bottom: 48px;
+  padding: 0px;
 }
 
 .mobile-menu-item + .mobile-menu-item{
@@ -183,6 +185,7 @@ color: #2196F3;
   margin-left: 88px;
   margin: 0;
 }
+
 .link.current{
   position: relative;
 }
@@ -190,6 +193,7 @@ color: #2196F3;
 .site-nav.list{
   margin-left: 88px;
 }
+
 .tablet + .tablet{
   margin-left: 50px;
 }
@@ -219,9 +223,15 @@ color: #2196F3;
   line-height: 0.85;
   letter-spacing: 0.02em;
 }
+&:hover .item-icon,
+&:focus .item-icon{
+  fill: $main-color;
 }
+}
+
 .item-icon {
   fill: $secondary-text-color;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .item-icon.envelope{
   width: 14px;
@@ -260,10 +270,13 @@ color: #2196F3;
   &:focus {
   color: $main-color;
 }
+&.current{
+  color: $main-color;
+}
 }
 .cont-nav.link{
   display: block;
-  color: #2196F3;
+  color: $main-color;
 }
 }
 
@@ -292,7 +305,7 @@ color: #2196F3;
   padding-left: 0px;
 }
 
-  .site-nav .link {
+.site-nav .link {
   position: relative;
   display: block;
   padding-top: 32px;
