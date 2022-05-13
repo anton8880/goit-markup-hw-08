@@ -209,6 +209,10 @@ textarea {
   width: 219px;
   padding: 0px;
   margin: 0px;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 47px;
+  letter-spacing: 0.02em;
 }
 
 .mobile-menu-contact {
@@ -277,6 +281,9 @@ textarea {
     padding-top: 0;
     padding-bottom: 0;
     margin: 0;
+  }
+  .item:first-child {
+    margin-bottom: 10px;
   }
   .site-nav {
     display: -webkit-box;
@@ -387,6 +394,9 @@ textarea {
         -ms-flex-align: center;
             align-items: center;
     height: 80px;
+  }
+  .item:first-child {
+    margin-bottom: 0px;
   }
   .main-nav {
     display: -webkit-box;
